@@ -34,44 +34,48 @@ nav{
     
     width:400px;
     height:400px;
-    background-image: url("logo\ do\ meu\ nome\ 04\(rosa\).png");
+    background-image: url("./assets/logo\ do\ meu\ nome\ 04\(rosa\).png");
     background-size: cover;
 }
 
-main{
-    max-width:750px;
-    margin:0 auto;
-    text-align:center;
-    padding: 40px;
+.logo-img{
+    height: 40px;
+    width: 40px;
+    background-image: url("./assets/logo\ do\ meu\ nome\ 04\(rosa\).png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 4px;
+    border: none;
+    border-radius: 23px;
+    transition: 0.3s;
+    background-color: #F3C6CF;
 }
 
-.botoes{
-    background-color: #F3C6CF;
-    color: #292820 ;
-    padding: 15px 50px;
-    border: none;
-    border-radius: 100px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: 0.3s;
-    font-family: "Montserrat", sans-serif;
-} 
-
-.botoes:hover{
+.logo-img:hover{
     background-color: #E8AEBB;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    text-align: center;
+    max-width:750px;
+    margin:0 auto;
+    padding: 40px;
 }
 
 .redes{
     display:flex;
+    align-items:center;
     justify-content: center;
     gap:20px; 
-    padding: 20px;
 }
 
 .redes a{
     background-color:#F3C6CF;
     color:#292820 ;
-    padding:10px 55px;
+    padding:10px 60px;
     border: none;
     border-radius: 100px;
     text-decoration: none;
@@ -91,6 +95,7 @@ a:hover{
     text-align: left;
     list-style: none;
 }
+
 .lista li{
     margin-bottom: 12px;
     font-family: "Montserrat", sans-serif;
@@ -108,36 +113,32 @@ a:hover{
     width:300px;
     height:300px;
     margin: 20px auto;
-    background-image: url("logo\ de\ fada\ 2.png");
+    background-image: url("./assets/logo\ de\ fada\ 2.png");
     background-size: contain;
     background-repeat: no-repeat; 
 }
 
-.logo-img{
-    height: 40px;
-    width: 40px;
-    background-image: url("logo\ do\ meu\ nome\ 04\(rosa\).png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 4px;
-    border: none;
-    border-radius: 23px;
-    transition: 0.3s;
+.botoes{
     background-color: #F3C6CF;
-}
+    color: #292820 ;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 100px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "Montserrat", sans-serif;
+} 
 
-.logo-img:hover{
+.botoes:hover{
     background-color: #E8AEBB;
 }
+
 
 .temas_botoes{
     display: flex;
     justify-content: center;
     gap:25px;
-}
-
-#contato{
-    padding: 40px;
 }
 
 .titulo{
@@ -147,10 +148,35 @@ a:hover{
     border: none;
     border-radius: 100px;
     font-family: "Molle", cursive;
-    margin:10px;
+    margin-bottom: 60px;
 }
 
 p{
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
+}
+
+.contato_redes_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.contato_redes_links_icone1 {
+        width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("./assets/lets-icons--insta.svg");
+}
+
+.contato_redes_links_icone2 {
+        width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("./assets/akar-icons--github-fill.svg");
 }
